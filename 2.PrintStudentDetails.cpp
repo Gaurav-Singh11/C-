@@ -9,23 +9,23 @@ class Students
 public:
     void set_data(Students *)
     {
-        cout<<"\nEnter the details of student :"<<endl;
-        cout<<"\nEnter the Name : ";
+        cout<<"Enter the details of student: "<<endl;
+        cout<<"Enter the Name: "<<endl;
         cin>>name;
-        cout<<"\nEnter Roll No : ";
+        cout<<"Enter Roll No: "<<endl;
         cin>>roll_no;
-        cout<<"\nEnter Total Marks : ";
+        cout<<"Enter Total Marks: "<<endl;
         cin>>total_marks;
     }
     void get_data(Students *)
     {
-        cout<<"\nDetails of  the student :"<<endl;
-        cout<<"\nName : ";
-        cout<<name;
-        cout<<"\nRoll No : ";
-        cout<<roll_no;
-        cout<<"\nTotal Marks : ";
-        cout<<total_marks;
+        cout<<"Details of  the student: "<<endl;
+        cout<<"Name: ";
+        cout<<name<<endl;
+        cout<<"Roll No: ";
+        cout<<roll_no<<endl;
+        cout<<"Total Marks: ";
+        cout<<total_marks<<endl;
     }
     static void Sortbyroll(Students *ptr, int n);
     static void Sortbymarks(Students *ptr, int n);
@@ -88,7 +88,7 @@ void Students:: Sortbynames(Students *ptr,int n)
 int main()
 {
     int n;
-    cout<<"\nEnter the no. of students : ";
+    cout<<"Enter the no. of students: "<<endl;
     cin>>n;
     Students *ptr = new Students[n];
     for(int i=0; i<n ; i++)
